@@ -1,0 +1,31 @@
+
+  #foto{
+    width: 330px;
+    margin: 2rem auto;
+  }
+.seccion-bienvenida{
+    margin: 5rem 0  10rem 0;
+    color: white;
+}
+.seccion-bienvenida h2{
+  margin-bottom: 1rem;
+}
+.dotnt-logo{
+  width: 500px;
+}
+.cabecera{
+  font-weight: bold;
+
+}
+.habilidades ul{
+
+  list-style: none;
+  padding-left: 0%;
+}
+.habilidades i{
+  font-size: 50px; 
+  color: gray;
+}
+
+
+
