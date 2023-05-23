@@ -10,7 +10,7 @@ namespace portafolio.Models.Servicios
             new Proyecto{
                 Titulo= "Amazon",
                 Descripcion="E-commerce",
-                ImagenUrl="./imagenes/amazon.png",
+                ImagenUrl="/imagenes/amazon.png",
                 Link="https://amazon.com"
             },
              new Proyecto{
@@ -22,7 +22,7 @@ namespace portafolio.Models.Servicios
             new Proyecto{
                 Titulo= "Reddit",
                 Descripcion="Red social para compartir en comunidades",
-                ImagenUrl="./imagenes/reddit.png",
+                ImagenUrl="/imagenes/reddit.png",
                 Link="https://www.reddit.com"
             }
         };
