@@ -24,3 +24,7 @@
 /Users/yohswhabello/Desktop/MVC/asp/portafolio/obj/Debug/net6.0/portafolio.pdb
 /Users/yohswhabello/Desktop/MVC/asp/portafolio/obj/Debug/net6.0/portafolio.genruntimeconfig.cache
 /Users/yohswhabello/Desktop/MVC/asp/portafolio/obj/Debug/net6.0/ref/portafolio.dll
+/Users/yohswhabello/Desktop/MVC/asp/portafolio/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/yohswhabello/Desktop/MVC/asp/portafolio/bin/Debug/net6.0/SendGrid.dll
+/Users/yohswhabello/Desktop/MVC/asp/portafolio/bin/Debug/net6.0/StarkbankEcdsa.dll
+/Users/yohswhabello/Desktop/MVC/asp/portafolio/obj/Debug/net6.0/portafolio.csproj.CopyComplete

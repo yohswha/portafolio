@@ -9,11 +9,12 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly IRepositorioProyectos repositorioProyectos;
+    private readonly IServicioEmail servicioEmail;
 
-    public HomeController(ILogger<HomeController> logger,IRepositorioProyectos repositorioProyectos)
+    public HomeController(IRepositorioProyectos repositorioProyectos,IServicioEmail servicioEmail)
     {
-        _logger = logger;
         this.repositorioProyectos = repositorioProyectos;
+        this.servicioEmail = servicioEmail;
     }
 
     public IActionResult Index()
@@ -29,7 +30,20 @@ public class HomeController : Controller
         var proyectos = repositorioProyectos.ObtenerProyectos();
         return View(proyectos);
     }
-
+    [HttpGet]
+    public IActionResult Contacto(){
+        return View();
+    }
+    //post method
+    [HttpPost]
+    public async Task<IActionResult> Contacto(ContactoViewModel contactoViewModel) 
+    {
+        await servicioEmail.Enviar(contactoViewModel);
+        return RedirectToAction("Thanks");
+    }
+    public IActionResult Thanks(){
+        return View();
+    }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
